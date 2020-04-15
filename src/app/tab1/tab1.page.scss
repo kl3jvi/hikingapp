@@ -1,3 +1,79 @@
-ion-content ion-toolbar {
-  --background: translucent;
+.image{
+  height: 180px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 0.5%;
 }
+
+.container{
+  width: 100%;
+  height: 180px;
+  position: relative;
+}
+.infoi {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: 150px;
+  z-index: 10;
+  left: 0;
+}
+
+.segment{
+  padding-top: 30px;
+}
+
+.butimg{
+  height: 35px;
+  width: auto;
+}
+.item {
+  text-align: center;
+  
+}
+.more{
+  width: 30px;
+  height: auto;
+}
+
+
+.sarresht{
+  width: 100%;
+  text-align: center;
+}
+
+.card{
+  width: 180px;
+  height: 180px;
+  background-size: cover;
+  color: white;
+    justify-content: center;
+    align-items: flex-end;
+    display: flex;
+}
+
+.imazhislides{
+  height: 180px;
+  width: 180px;
+  object-fit: cover;
+}
+
+.kayak{
+  --background: url('../../assets/slider-icons/kayak.png');
+}
+
+.mount{
+  --background: url('../../assets/slider-icons/kot.png');
+}
+.imge{
+  width: 100%;
+  height: 180px;
+}
+.info1{
+    position: absolute;
+    top: 800px;
+    z-index: 10;
+   text-align: center;
+   left: 25%;
+    
+  }

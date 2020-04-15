@@ -1,0 +1,20 @@
+<ion-content class="background">
+  <div class="main">
+      <form class="form">
+          <ion-item class="rounded">
+              <ion-label position="floating" color="primary">Email</ion-label>
+              <ion-input type="text" #email required></ion-input>
+          </ion-item>
+<br>
+          <ion-item class="rounded">
+              <ion-label position="floating" color="primary">Password</ion-label>
+              <ion-input  type="password" #password required></ion-input>
+          </ion-item>
+      </form>
+      <br>
+      <ion-button color="success" type="submit" (click)="signUp(email, password)" shape="round">Create Account</ion-button>
+  </div>
+
+  
+
+</ion-content>

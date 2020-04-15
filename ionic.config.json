@@ -1,5 +1,7 @@
 {
   "name": "hikerapp",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }

@@ -1,17 +1,152 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Tab 1
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
-
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 1</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <div class="container">
+    <ion-slides  pager={true}>
+      <ion-slide>
+        <img class="image" src="https://i.pinimg.com/originals/ff/ea/b7/ffeab7da0cd51a4a3f6f86e5a857a737.jpg">
+      </ion-slide>
+      <ion-slide>
+        <img class="image"
+          src="https://www.wallpaperup.com/uploads/wallpapers/2015/04/02/653105/09d95a6f0e5f6e6a79bcbc58aa1222ad-700.jpg">
+      </ion-slide>
+      <ion-slide>
+        <img class="image"
+          src="https://miro.medium.com/max/1200/1*mk1-6aYaf_Bes1E3Imhc0A.jpeg">
+      </ion-slide>
+     
+    </ion-slides>
+    
+  </div>
+  <div class="infoi">
+   <ion-searchbar mode="md"></ion-searchbar>
+  </div>
 
-  <app-explore-container name="Tab 1 page"></app-explore-container>
+  <div class="segment">
+    <ion-segment mode="md" color="success" scrollable value="call">
+      <ion-segment-button value="call" layout="icon-start">
+        <ion-label>Explore</ion-label>
+      </ion-segment-button>
+      <ion-segment-button value="favorite" layout="icon-start">
+        <ion-label>Experiences</ion-label>
+      </ion-segment-button>
+    </ion-segment>
+  </div><br>
+<!-- first column -->
+  <div class="contain">
+    
+    <ion-row>
+      <ion-col>
+        <div class="item">
+          <img class="butimg" src="../../assets/button-icons/camping.png">
+          <ion-label>Camping</ion-label>
+        </div>
+      </ion-col>
+      <ion-col>
+        <div class="item">
+          <img class="butimg" src="../../assets/button-icons/surf.png">
+          <ion-label>Surfing</ion-label>
+        </div>
+      </ion-col>
+      <ion-col>
+        <div class="item">
+          <img class="butimg" src="../../assets/button-icons/running.png">
+          <ion-label>Running</ion-label>
+        </div>
+      </ion-col>
+    </ion-row>
+<br>
+<!-- second column -->
+    <ion-row>
+      <ion-col> 
+        <div class="item">
+          <img class="butimg" src="../../assets/button-icons/explore.png">
+          <ion-label>Explore</ion-label>
+        </div>
+      </ion-col>
+      <ion-col>
+        <div class="item">
+          <img class="butimg" src="../../assets/button-icons/hiking.png">
+          <ion-label>Hiking</ion-label>
+        </div>
+      </ion-col>
+      <ion-col>
+        <div class="item">
+          <img class="butimg" src="../../assets/button-icons/hiking.png">
+          <ion-label>More</ion-label>
+        </div>
+      </ion-col>
+    </ion-row>
+</div>
+
+<div class="sarresht">
+  <h3>Popular Experiences</h3>
+</div>
+<div>
+  <ion-slides [options]="slideOptions">
+    <ion-slide>
+      <ion-card class="card kayak">
+        <ion-card-title color="white">Kayak Sun <br>Island</ion-card-title>
+      </ion-card>
+    </ion-slide>
+    <ion-slide>
+      <ion-card class="card mount">
+        <ion-card-title color="white">Traverse Mount Hood</ion-card-title>
+      </ion-card>
+    </ion-slide>
+
+    <ion-slide>
+      <ion-card class="card kayak">
+        <ion-card-title color="white">Kayak</ion-card-title>
+      </ion-card>
+    </ion-slide>
+  </ion-slides>
+</div>
+
+<div class="imge">
+  <img src="../../assets/images/textures.png">
+</div>
+
+<div class="info1">
+  <ion-button href="https://www.rei.com" shape="round">GET IT AT REI.COM</ion-button>
+</div>
+<br>
+<div class="sarresht">
+  <h3>Recent Activity</h3>
+</div>
+
+<div>
+  <ion-item>
+    <ion-avatar slot="start">
+      <img src="https://picsum.photos/200/300?grayscale">
+    </ion-avatar>
+    <ion-label>
+      <h3>Lorem ipsum</h3>
+      <p>dolor sit amet</p>
+    </ion-label>
+  </ion-item>
+  
+
+    <ion-item>
+      <ion-avatar slot="start">
+        <img src="https://picsum.photos/202/300?grayscale">
+      </ion-avatar>
+      <ion-label>
+        <h3>Lorem ipsum</h3>
+        <p>dolor sit amet</p>
+      </ion-label>
+    </ion-item>
+    
+
+      <ion-item>
+        <ion-avatar slot="start">
+          <img src="https://picsum.photos/203/300?grayscale">
+        </ion-avatar>
+        <ion-label>
+          <h3>Lorem ipsum</h3>
+          <p>dolor sit amet</p>
+        </ion-label>
+      </ion-item>
+      
+      <ion-button expand="full">CREATE A NEW EXPERIENCE</ion-button>
+</div>
+
 </ion-content>
